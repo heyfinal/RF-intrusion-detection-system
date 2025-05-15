@@ -1,0 +1,48 @@
+{
+    "sample_rate": 2.4e6,
+    "center_freq": 915e6,
+    "gain": "auto",
+    "fft_size": 1024,
+    "num_samples": 256000,
+    "threshold": 12,
+    "scan_interval": 5,
+    "output_dir": "rf_ids_data",
+    "baseline_samples": 10,
+    "force_new_baseline": false,
+    "device_max_freq": 1700e6,
+    "frequencies": [
+        100,
+        200,
+        433,
+        915
+    ],
+    "email_alerts": false,
+    "email": {
+        "sender": "",
+        "recipient": "",
+        "password": "",
+        "server": "smtp.gmail.com",
+        "port": 587
+    },
+    "sms_alerts": false,
+    "sms_config": {
+        "service": "twilio",
+        "account_sid": "",
+        "auth_token": "",
+        "from_number": "",
+        "to_number": ""
+    },
+    "proximity_detection": {
+        "enabled": true,
+        "bluetooth_distance_threshold": 10,
+        "cellular_distance_threshold": 15,
+        "calibration_needed": true,
+        "use_lower_frequencies": true,
+        "calibration_values": {
+            "wireless_freq": 433,
+            "wireless_power": -60,
+            "cellular_freq": 850,
+            "cellular_power": -65
+        }
+    }
+}
